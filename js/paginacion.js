@@ -1,5 +1,5 @@
 // Lista de archivos HTML a paginar
-const paginas = ["Tess.html", "pagina2.html", "pagina3.html"];
+const paginas = ["TESS.html", "pagina2.html", "pagina3.html"];
 let paginaActual = 0;
 
 function cambiarPagina(direccion) {
