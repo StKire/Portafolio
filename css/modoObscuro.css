@@ -303,9 +303,26 @@ iframe {
     margin: 1em 0; /* Reducido para móviles */
     padding: 1em;
     border: 0;
+    background: #1a1a1a;
+    font-size: 1em;
+    color: #ffffff;
+    border: #4b0082 solid 2px;
+    border-radius: 30px;
+}
+
+.contacto > form > button {
+    margin: 1em 0; /* Reducido para móviles */
+    padding: 1em 2em;
     background: #4b0082;
     color: #ffffff;
+    border: 0;
     border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contacto > form > button:hover {
+    background: #800080;
 }
 
 /* Media Queries para tablets */

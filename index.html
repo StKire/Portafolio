@@ -8,6 +8,7 @@
     <title>PortFolio Kire Gomez</title>
 </head>
 <body>
+
     <!-- Barra de Navegación -->
     <div class="navbar">
         <h1>Developer Portfolio</h1>
@@ -93,9 +94,10 @@
     <!--contacto-->
     <div class="contacto">
         <h2>Contacto</h2>
-        <form id="contactForm" action="mailto:alegpx058@gmail.com" method="post" enctype="text/plain"></form>
+        <form id="contactForm" action="mailto:alegpx058@gmail.com" method="post" enctype="text/plain">
             <p>Email: alegpx058@gmail.com</p>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
             <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
             <button type="submit">Enviar</button>
         </form>
@@ -105,6 +107,7 @@
 </body>
 <script src="js/theme.js"></script>
 <script src="js/paginacion.js"></script>
+<script src="js/correo.js"></script>
 <!-- Iconos de Redes Sociales -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
