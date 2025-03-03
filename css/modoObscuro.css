@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Playwrite+IT+Moderna:wght@100..400&family=Sigmar&display=swap');
+
+h1,h2,h3{
+    font-family: "Sigmar", cursive;
+    font-weight: 400;
+    font-style: static;
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    font-family: 'Roboto', sans-serif;
+    color: #d3d3d3;
+    font-size: 12px; /* Tamaño de fuente base para móviles */
+}
+
+.navbar {
+    background: #4b0082;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: nowrap;
+    flex-direction: column; /* Cambia la dirección de la barra de navegación a vertical en móviles */
+}
+
+.navbar > h1 {
+    color: #ffffff;
+    font-size: 2em; /* Reducido para móviles */
+    font-weight: bold;
+}
+
+.navbar > p {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em; /* Reducido para móviles */
+}
+
+/* Sección Home */
+.home {
+    width: 90%;
+    margin: 1.5em auto; /* Reducido para móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Ajustado para móviles */
+    text-align: center;
+    background: #1a1a1a;
+    border-radius: 30px;
+    padding: 1em; /* Añadido para móviles */
+    border: #4b0082 2px solid;
+}
+
+.home .container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; /* Cambia la dirección del contenedor a vertical en móviles */
+}
+
+.home .texto {
+    width: 100%; /* Ocupa el 100% del ancho en móviles */
+}
+
+.home .texto h2 {
+    font-size: 2em; /* Reducido para móviles */
+    color: #ffffff;
+}
+
+.home .texto p {
+    font-size: 1.2em; /* Reducido para móviles */
+    color: #a9a9a9;
+}
+
+.home .texto button {
+    padding: 1em 2em;
+    margin-top: 2em; /* Añadido para móviles */
+    background: #4b0082;
+    color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.5em;
+}
+
+.home .texto button:hover {
+    background: #800080;
+}
+
+.home .imagen {
+    width: 100%; /* Ocupa el 100% del ancho en móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em; /* Añadido para móviles */
+}
+
+.home .imagen img {
+    width: 80%;
+    max-width: 200px; /* Reducido para móviles */
+    height: auto;
+    object-fit: contain;
+    border-radius: 30em;
+}
+
+/* Sección Habilidades */
+.skills {
+    width: 90%;
+    margin: 2em auto; /* Reducido para móviles */
+    background: #1a1a1a;
+    border-radius: 30px;
+    padding: 1em; /* Reducido para móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: #4b0082 2px solid;
+}
+
+.skills > .izq, .skills > .der {
+    width: 100%; /* Ocupa el 100% del ancho en móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills > .izq > h2, .skills > .der > h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em; /* Reducido para móviles */
+    color: #ffffff;
+    margin-bottom: 1em; /* Reducido para móviles */
+}
+
+.skills > .izq > p {
+    width: 100%;
+    padding: 0 1em; /* Reducido para móviles */
+    text-align: justify;
+    font-size: 1em; /* Reducido para móviles */
+    color: #a9a9a9;
+}
+
+.skills > .der > p {
+    width: 100%;
+    padding: .5em; /* Reducido para móviles */
+    text-align: center;
+    font-size: 1em; /* Reducido para móviles */
+    color: #a9a9a9;
+}
+
+/* Sección Portafolio */
+.portfolio {
+    width: 90%;
+    margin: 2em auto; /* Reducido para móviles */
+    background: #1a1a1a;
+    border-radius: 30px;
+    padding: 1em; /* Reducido para móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: #4b0082 2px solid;
+}
+
+.portfolio > h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em; /* Reducido para móviles */
+    color: #ffffff;
+    margin-bottom: 1em; /* Reducido para móviles */
+}
+
+.portfolio > p {
+    width: 100%;
+    padding: 0 1em; /* Reducido para móviles */
+    text-align: center;
+    font-size: 1.2em; /* Reducido para móviles */
+    color: #a9a9a9;
+}
+
+.portfolio > div {
+    width: 100%;
+    margin: 1em 0; /* Reducido para móviles */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio > div > div {
+    width: 100%; /* Ocupa el 100% del ancho en móviles */
+    margin: 1em 0; /* Reducido para móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+iframe {
+    width: 100%;
+    height: 30em; /* Ajustado para móviles */
+    margin: 1em 0; /* Reducido para móviles */
+    border: 0;
+}
+.pagination {
+    width: 100%;
+    margin: 2em 0; /* Reducido para móviles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pagination button {
+    margin: 0 1em; /* Reducido para móviles */
+    padding: 10px 15px;
+    border: 1px solid #4b0082;
+    border-radius: 20px;
+    background: #4b0082;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+    background: #800080;
+}
+
+/* Redes Sociales */
+.redes {
+    width: 90%; /* Ajustado para móviles */
+    margin: 1em auto; /* Reducido para móviles */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em; /* Reducido para móviles */
+    background: #1a1a1a;
+    border: #4b0082 2px solid;
+    border-radius: 7em;
+}
+
+.redes > a {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%; /* Reducido para móviles */
+    font-size: 2em; /* Reducido para móviles */
+    transition: all 0.3s ease;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.redes > a:hover {
+    color: #800080;
+    transform: scale(1.5);
+}
+
+.contacto {
+    width: 90%; /* Ajustado para móviles */
+    margin: 2em auto; /* Reducido para móviles */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em; /* Reducido para móviles */
+    background: #1a1a1a;
+    border: #4b0082 2px solid;
+    border-radius: 30px;
+}
+
+.contacto > h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em; /* Reducido para móviles */
+    color: #ffffff;
+    margin-bottom: 1em; /* Reducido para móviles */
+}
+
+.contacto > form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto > form > p {
+    width: 100%;
+    padding: 0 1em; /* Reducido para móviles */
+    text-align: center;
+    font-size: 1.2em; /* Reducido para móviles */
+    color: #a9a9a9;
+}
+
+.contacto > form > input, .contacto > form > textarea {
+    width: 100%; /* Ocupa el 100% del ancho en móviles */
+    margin: 1em 0; /* Reducido para móviles */
+    padding: 1em;
+    border: 0;
+    background: #4b0082;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* Aumenta el tamaño de la fuente para tablets */
+    }
+
+    .navbar {
+        flex-direction: row; /* Vuelve a la dirección horizontal en tablets */
+        padding: 1em 2em;
+    }
+
+    .navbar .name a {
+        font-size: 1.5em; /* Restaura el tamaño original */
+    }
+
+    .navbar .menu {
+        margin-top: 0;
+    }
+
+    .navbar .menu a {
+        margin-left: 2em; /* Restaura el espaciado original */
+    }
+
+    .home {
+        height: 80vh; /* Restaura la altura original */
+        margin: 2.5em auto; /* Restaura el margen original */
+    }
+
+    .home .container {
+        flex-direction: row; /* Vuelve a la dirección horizontal en tablets */
+    }
+
+    .home .texto, .home .imagen {
+        width: 50%; /* Vuelve a la distribución original en tablets */
+    }
+
+    .home .imagen img {
+        max-width: 300px; /* Restaura el tamaño original */
+    }
+
+    .skills > .izq, .skills > .der {
+        width: 50%; /* Vuelve a la distribución original en tablets */
+    }
+
+    .redes {
+        width: 80%; /* Ajusta el ancho de la sección de redes en tablets */
+    }
+
+    .redes > div > div {
+        width: 20%; /* Aumenta el tamaño de los íconos en tablets */
+        font-size: 2em;
+    }
+}
+
+/* Media Queries para pantallas grandes (escritorio) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px; /* Aumenta el tamaño de la fuente para escritorio */
+    }
+
+    .home .imagen img {
+        max-width: 300px; /* Aumenta el tamaño de la imagen en escritorio */
+    }
+
+    .redes {
+        width: 70%; /* Ajusta el ancho de la sección de redes en escritorio */
+    }
+
+    .redes > div > div {
+        width: 20%; /* Mantiene el tamaño de los íconos en escritorio */
+        font-size: 2.5em;
+    }
+}
+
+/* Media Queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    body {
+        font-size: 10px; /* Disminuye el tamaño de la fuente para móviles pequeños */
+    }
+
+    .navbar > h1 {
+        font-size: 1.5em; /* Reducido para móviles pequeños */
+    }
+
+    .navbar > p {
+        font-size: 1em; /* Reducido para móviles pequeños */
+    }
+
+    .home .texto h2 {
+        font-size: 1.5em; /* Reducido para móviles pequeños */
+    }
+
+    .home .texto p {
+        font-size: 1em; /* Reducido para móviles pequeños */
+    }
+
+    .home .texto button {
+        font-size: 1.2em; /* Reducido para móviles pequeños */
+    }
+
+    .skills > .izq > h2, .skills > .der > h2 {
+        font-size: 1.5em; /* Reducido para móviles pequeños */
+    }
+
+    .skills > .izq > p, .skills > .der > p {
+        font-size: 0.8em; /* Reducido para móviles pequeños */
+    }
+
+    .portfolio > h2 {
+        font-size: 1.5em; /* Reducido para móviles pequeños */
+    }
+
+    .portfolio > p {
+        font-size: 1em; /* Reducido para móviles pequeños */
+    }
+
+    .contacto > h2 {
+        font-size: 1.5em; /* Reducido para móviles pequeños */
+    }
+
+    .contacto > form > p {
+        font-size: 1em; /* Reducido para móviles pequeños */
+    }
+
+    .contacto > form > input, .contacto > form > textarea {
+        font-size: 0.8em; /* Reducido para móviles pequeños */
+    }
+
+    .contacto > form > button {
+        font-size: 0.8em; /* Reducido para móviles pequeños */
+    }
+}

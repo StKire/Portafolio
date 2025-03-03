@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modoObscuro.css">
+    <link rel="stylesheet" href="css/fondoObscuro.css">
+    <title>PortFolio Kire Gomez</title>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <div class="navbar">
+        <h1>Developer Portfolio</h1>
+        <p>Kire Gomez</p>
+    </div>
+
+    <!-- Sección Home -->
+    <div id="home" class="home">
+        <div class="container">
+            <div class="texto">
+                <h2>Hello, I'm Kire Gomez</h2>
+                <p>Full-Stack Developer</p>
+                <br>
+                <br>
+                <br>
+                <h2>Sobre Mí</h2>
+                <p>Desarrollador FullStack Jr.</p>
+                <p>Estudiante de Ingeniería en Sistemas</p>
+                <p>Coofundador de Switchardz SA.DE.CV.</p>
+                <button id="btnCv">Descargar CV</button>
+            </div>
+            <div class="imagen">
+                <img src="images/perfil.jpg" alt="Foto del desarrollador">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Habilidades -->
+    <div id="skills-services" class="skills">
+        <div class="izq">
+            <h2>Habilidades</h2>
+            <p>En mi trayectoria como desarrollador, he adquirido una sólida experiencia en diversas tecnologías y lenguajes de programación. 
+            <br>
+            <br>Mi conocimiento en Java y sus frameworks como Spring y Spring Boot me permite desarrollar aplicaciones robustas y seguras. 
+            <br>
+            <br>Tengo habilidades en el desarrollo de interfaces gráficas con Java Swing y JavaFX ,y en la implementación de seguridad con Spring Security y JWT.
+            <br>
+            <br>También tengo experiencia en el manejo de bases de datos utilizando SQL y frameworks ORM como Hibernate y Spring Data JPA.  
+            <br>
+            <br>En el desarrollo de aplicaciones web, utilizo tecnologías como HTML, CSS, JavaScript, Angular y React para crear interfaces atractivas y dinámicas.
+            <br>
+            <br>En el desarrollo de aplicaciones móviles, utilizo tecnologías como Android Studio y Flutter para crear aplicaciones nativas y multiplataforma.
+            </p>
+            </div>
+        
+            <div class="der">
+                <h2>Servicios</h2>
+                <p>Desarrollo de Aplicaciones de Escritorio</p>
+                <p>Desarrollo de Aplicaciones Empresariales</p>
+                <p>Monolitos</p>
+                <p>Microservicios</p>
+                <p>Modelado de Bases de Datos</p>
+                <p>Desarrollo de Páginas Web</p>
+                <p>Desarrollo de Aplicaciones Web</p>
+                <p>Desarrollo de Aplicaciones Móviles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Portafolio -->
+    <div id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+            <iframe id="iframeContent" src="TESS.html"></iframe>
+
+            <div class="pagination">
+                <button id="prevBtn" onclick="cambiarPagina(-1)">Anterior</button>
+                <span id="pageInfo"></span>
+                <button id="nextBtn" onclick="cambiarPagina(1)">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="redes">
+        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href=""><ion-icon name="logo-github"></ion-icon></a>
+        <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+    </div>
+
+    <!--contacto-->
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm" action="mailto:alegpx058@gmail.com" method="post" enctype="text/plain"></form>
+            <p>Email: alegpx058@gmail.com</p>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+</body>
+<script src="js/theme.js"></script>
+<script src="js/paginacion.js"></script>
+<!-- Iconos de Redes Sociales -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
